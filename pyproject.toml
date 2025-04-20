@@ -46,7 +46,6 @@ select = [
     "W",    # pycodestyle warnings
 ]
 ignore = [
-    "F401",    # Unused imports
     "N999",    # Invalid module name
     "PLR2004", # Magic numbers
 ]
