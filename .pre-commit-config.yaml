@@ -1,7 +1,7 @@
 # Go to the URLs found in "repo" to check the latest version of the hooks.
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
     -   id: trailing-whitespace
     -   id: end-of-file-fixer
@@ -17,10 +17,10 @@ repos:
 
 -   repo: https://github.com/astral-sh/ruff-pre-commit
     # Ruff version.
-    rev: v0.8.6
+    rev: v0.15.4
     hooks:
         # Run the linter.
-        - id: ruff
+        - id: ruff-check
           types_or: [ python, pyi ]
           args: [ --fix ]
           exclude: 'tests/.*'
@@ -31,6 +31,6 @@ repos:
 
 -   repo: https://github.com/astral-sh/uv-pre-commit
     # uv version.
-    rev: 0.6.14
+    rev: 0.10.7
     hooks:
       - id: uv-lock
